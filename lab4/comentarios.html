@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta name="author" content="Rogerio Oliveira">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Bangkok">
+        <meta charset="utf-8">
+        <title>Bangkok</title>
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+        <section>
+        <body style="background-color:lightgrey"></body>
+    
+    <h1>Bangkok</h1>
+    <img src="images/bangkok.png">
+    <br>
+
+
+    <nav>
+        <i class="material-icons">flag</i><a href="index.html">Introdução</a>
+        <i class="material-icons">location_on</i><a href="local.html">Localização</a>
+        <i class="material-icons">play_arrow</i><a href="multimedia.html">Multimédia</a>
+        <i class="material-icons">info</i> <a href="info.html">Informações</a>
+        <i class="material-icons">quiz</i><a href="quizz.html">Quizz</a>
+        <i class="material-icons">comment</i><a href="comentarios.html"><b>Comentarios</b></a>
+        <i class="material-icons">code</i><a href="html5-css.html">HTML5 & CSS</a>
+        <i class="material-icons">home</i><a href="../index.html">Home</a>
+   </nav>
+
+    </section>
+
+    <main>
+
+        <section>
+
+    <h3>Comentários</h3>
+    <form>
+        <input type="hidden" id = "message" name ="message" value ="form about opinions of this site conceived in lab4">
+        <fieldset>
+            <legend>Comments</legend>
+
+            <p>From 1 to 10 how would you rate the level of <b>clarity</b> in the questions presented in the quizz section of this website?</p>
+
+            <input type="number" id ="ratingQ1" name ="ratingQ1" min="0" max="10" placeholder="0" step="1">
+
+            <p>From 1 to 10 how would you rate the level of <b>rigor</b> in the questions presented in the quizz section of this website?</p>
+
+            <input type="number" id ="ratingQ2" name ="ratingQ2" min="0" max="10" placeholder="0" step="1">
+
+            <p>Reagarding the website itself how would you qualify(from 1 to 10) the level of precision regarding the information displayed </p>
+
+            <input type="number" id ="ratingQ3" name ="ratingQ3" min="0" max="10" placeholder="0" step="1">
+
+            <p>Do you think this website covers a wide range of topics related to bangkok</p>
+
+            <select name="choice">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <p>Does this website make sense, as in the various parts make sense as a whole? Please give us your opinion</p>
+            <textarea name="opinion" cols="100" rows="10">         
+            </textarea>
+
+            <p>Do you believe this website focused on important details about bangkok. How focused would you say it was from 1 to 10 ?</p>
+
+            <input type="number" id ="ratingQ4" name ="ratingQ4" min="0" max="10" placeholder="0" step="1">
+
+            <p>Over here in our company we truly strive for groundbreaking website design. Which choices would best describe this website's originality</p>
+
+          <input type="checkbox" id= "option1" name ="option1" value ="amazing">
+          <label for="option1">Amazing, will name my future kid after you</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "option2" name ="option2" value ="incredible">
+          <label for="option2">Better than ***</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "option3" name ="option3" value ="pretty good">
+          <label for="option3">"You're pretty good" points finger guns</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "option4" name ="option4" value ="Decent">
+          <label for="option4">it's ok, I guess</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "option5" name ="option5" value ="Bad">
+          <label for="option5">Bad, didn't even want to finish this quizz</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "option6" name ="option6" value ="Horrible">
+          <label for="option6">Horrible, had to cancel my internet subscription to never see this again</label>
+          <h5 class="hide">br thats not a br</h5>
+
+          <p>As amazing as this site is i'm sure there are ways we can improve it further. Please give us your ideas on how to improve it</p>
+          <textarea name="opinion" cols="100" rows="20">         
+        </textarea>
+
+
+        </fieldset>
+    </form>
+
+    <br>
+    <svg width="600" height="600">
+        <g transform="translate(100,100)"> 
+          <a href="local.html"><text x="0" y="0" fill="red" style="font-family:Arial;font-size:24;stroke:red" >Local
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="10s" repeatCount= "indefinite" />
+            <animateMotion path="M 0 0 L 100 100" begin="1s" dur="10s" repeatCount= "indefinite"  />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="50" to="0" begin="1s" dur="10s" repeatCount= "indefinite" /> 
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="10s" repeatCount= "indefinite" /> 
+          </text> </a>
+        </g> 
+
+        <g id = "2" transform = "translate(300,200)">
+            <text id = "text2 " x ="50" y = "25" style="font-family:Arial;font-size:24;stroke:blue"><a href="quizz.html">Quizz</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="0" to="720" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="-20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g id = "3" transform = "translate(200,200)">
+            <text id = "text3 " x ="80" y = "25" style="font-family:Arial;font-size:24;stroke:rgba(241, 8, 222, 0.308)"><a href="multimedia.html">multimedia</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="-20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+        <g id = "3" transform = "translate(250,50)">
+            <text id = "text3 " x ="5" y = "5" style="font-family:Arial;font-size:24;stroke:rgba(8, 241, 66, 0.308)"><a href="info.html">info</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g id = "3" transform = "translate(150,150)">
+            <text id = "text3 " x ="5" y = "5" style="font-family:Arial;font-size:24;stroke:rgba(8, 230, 230, 0.808)"><a href="comentarios.html">comentarios</a>
+                <animateTransform attributeName="transform" type="rotate" dur="1.5s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="1.5s" values="0; 0; 0" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="1.5s" values="0; 0; 0" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g transform="translate(100,100)"> 
+            <a href="index.html"><text x="0" y="0" fill="yellow" style="font-family:Arial;font-size:24;stroke:rgb(255, 198, 12)" >Introducao
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" repeatCount= "indefinite" />
+              <animateMotion path="M 150 0 L 100 230" begin="1s" dur="5s" repeatCount= "indefinite"  />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="50" to="0" begin="1s" dur="5s" repeatCount= "indefinite" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="2" additive="sum" begin="1s" dur="5s" repeatCount= "indefinite" /> 
+            </text> </a>
+          </g> 
+        Sorry, your browser sucks.
+      </svg>
+    </section>
+
+    </main>
+    <footer>
+        <p>Rogério Oliveira a21703237 student at Universidade Lusofona</p>
+    </footer>
+
+    </body>
+
+    </html>

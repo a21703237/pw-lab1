@@ -1,0 +1,80 @@
+
+
+*{
+    font-family: Arial ;
+    background-color: lightgray;
+}
+h3{
+    color: red;
+}
+.bold{
+    font-weight: bold;
+}
+#mystery{
+    font-family: cursive;
+}
+[href*="in"]{
+    background: rgb(159, 178, 236);
+}
+a:link {
+    color: rgb(122, 8, 98);
+}
+a:visited {
+    color: rgb(77, 77, 77);
+}
+a:hover {
+    color: red;
+} 
+a:active {
+    color: blue;
+} 
+
+p::first-letter {
+    color: #000000;
+    font-size: x-large;
+}
+div p {
+    background-color: rgba(71, 71, 71, 0.541);
+}
+div + p{
+    background-color: rgb(195, 238, 1);
+}
+div > p{
+    background-color: rgb(236, 160, 224);
+}
+h5.hide{
+    visibility: hidden;
+}
+section.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+.img1{
+    position: static;
+    
+    z-index: -1;
+}
+.img2{
+    position: absolute;
+    left: 50px;
+    top: 1400px;
+    z-index: 1;
+}
+.img3{
+    position: absolute;
+    left: 90px;
+    top: 1450px;
+    z-index: 2;
+}
+.img4{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+
+
+
