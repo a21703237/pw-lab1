@@ -1,0 +1,218 @@
+
+
+*{
+    font-family: Arial ;
+    background-color: lightgray;
+
+    box-sizing: border-box;padding: 0;margin: 0;
+
+}
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+aside {grid-area: aside; }
+footer {grid-area: footer;}
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 350px 3fr 1fr;
+
+    grid-template-areas:
+             'nav header aside '
+             'nav main  aside'
+             'nav footer aside '
+             ;
+              grid-gap: 10px;
+              padding: 10px;
+}
+
+
+body>* {text-align: center;vertical-align: middle;}
+
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    
+
+    
+    
+    
+  } 
+  
+  .flex-container  div {
+   
+    width: 500px;
+    margin: 0px;
+    text-align: center;
+    
+    
+   
+  }  
+
+
+h3{
+    color: rgb(3, 93, 148);
+}
+.bold{
+    font-weight: bold;
+}
+#mystery{
+    font-family: cursive;
+}
+[href*="in"]{
+    background: rgb(159, 178, 236);
+}
+a:link {
+    color: rgb(122, 8, 98);
+}
+a:visited {
+    color: rgb(77, 77, 77);
+}
+a:hover {
+    color: red;
+} 
+a:active {
+    color: blue;
+} 
+
+p::first-letter {
+    color: #000000;
+    font-size: x-large;
+}
+div p {
+    background-color: rgba(71, 71, 71, 0.541);
+}
+div + p{
+    background-color: rgb(195, 238, 1);
+}
+div > p{
+    background-color: rgb(236, 160, 224);
+}
+h5.hide{
+    visibility: hidden;
+}
+section.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+.img1{
+    position: static;
+    
+    z-index: -1;
+}
+.img2{
+    position: absolute;
+    left: 900px;
+    top: 1125px;
+    z-index: 1;
+}
+.img3{
+    position: absolute;
+    left: 800px;
+    top: 1050px;
+    z-index: 2;
+}
+.img4{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+#border{
+    border-style: solid;
+    border-color : black;
+    border-width: 5px;
+}
+
+
+@keyframes test {
+    0%   {border-color : black;  border-width: 5px;}
+    25%  {border-color :rgb(3, 93, 148);  border-width: 5px;}
+    50%  {border-color: red;   border-width: 5px;}
+    75%  {border-color: rgb(195, 238, 1);   border-width: 5px;}
+    100% {border-color: gray;   border-width: 5px;}
+  }
+
+.animation1{
+   
+    animation-name: test;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+  }  
+
+
+.test{
+    width: 300px;
+    height: 300px;
+    transition: width 2s;
+  }
+.test:hover{
+    width: 400px;
+    
+} 
+.test2:hover{
+    height: 400px;
+}
+.test2{
+    width: 300px;
+    height: 300px;
+    transition: height 2s;
+  }
+
+.test3{
+    width: 300px;
+    height: 300px;
+    transition: height 2s, width 2s;
+    
+  } 
+  .test3:hover{
+    height: 400px;
+    width: 400px;
+}
+
+.test4{
+    width: 300px;
+    height: 300px;
+    transition: height 2s, width 2s;
+    
+  } 
+
+  .test4:hover{
+    height: 150px;
+    width: 150px;
+}
+
+.test5{
+    width: 300px;
+    height: 300px;
+    transition: height 2s, width 2s;
+    
+  } 
+
+.test5:hover{
+    height: 400px;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+

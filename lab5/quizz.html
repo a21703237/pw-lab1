@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta name="author" content="Rogerio Oliveira">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Bangkok">
+        <meta charset="utf-8">
+        <title>Bangkok</title>
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="viewport"
+                content="width=device-width,
+                initial-scale=1.0">
+
+    </head>
+
+    <header>
+<h1>Bangkok</h1>
+    <img src="images/bangkok.png">
+    <br>
+
+    </header>
+    <body>
+        <section class="sticky">
+        <body style="background-color:lightgrey"></body>
+    
+
+    
+
+
+
+    <nav>
+        <i class="material-icons">flag</i><a href="index.html">Introdução</a>
+        <i class="material-icons">location_on</i><a href="local.html">Localização</a>
+        <i class="material-icons">play_arrow</i><a href="multimedia.html">Multimédia</a>
+        <i class="material-icons">info</i> <a href="info.html">Informações</a>
+        <i class="material-icons">quiz</i><a href="quizz.html"><b>Quizz</b></a>
+        <i class="material-icons">comment</i><a href="comentarios.html">Comentarios</a>
+        <i class="material-icons">code</i><a href="html5-css.html">HTML5 & CSS</a>
+        <i class="material-icons">home</i><a href="../index.html">Home</a>
+   </nav>
+</section>
+    <main>
+
+        <section>
+
+    <h3>Quizz</h3>
+
+
+
+   
+
+    <form autocomplete="on">
+        <fieldset>
+         <legend>Identification</legend>
+          <p>Nome: <input type = "text" name = "nome" autocomplete autofocus></p>
+          <p>Idade: <input type = "text" name = "nome"size="4" maxlength="4"></p>
+          <p>Email: <input type = "email" name = "nome" autocomplete="off" required></p>
+          <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+
+    <form method = "post" action="mailto:roger0097@gmail.com">
+        <fieldset>
+          <legend>Quizz about Bangkok</legend>
+          <p>In wich country is the city of Bangkok located?</p>
+          <input type = "text" name = "nome" value ="???">
+            <div>
+          <p>Bangkok is known as the city of what?</p>
+          <input type = "text" name = "nome" value ="???">
+           
+          <section><p>Who founded Bangkok?</p></section>
+          <input type = "text" name = "nome" value ="???">
+            
+            </div>
+            
+          <p>What is the total area of Bangkok?</p>
+          <input type = "radio" id = "number1" name = "size" value = "1,568.737 km2">
+          <label for="number1">1,568.737</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type = "radio" id = "number2" name = "size" value = "1,668.737 km2">
+          <label for="number2">1,668.737</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type = "radio" id = "number3" name = "size" value = "1,768.737 km2">
+          <label for="number3">1,768.737</label>
+            <div>
+          <p>What language is spoken in Bangkok</p>
+
+          <input type="checkbox" id= "language1" name ="language1" value ="English">
+          <label for="language1">English</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "language2" name ="language2" value ="Indian">
+          <label for="language1">Indian</label>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="checkbox" id= "language3" name ="language3" value ="Thai">
+          <label for="language1">Thai</label>
+            
+          <p>When was Bangkok fouded as Capital?</p>
+
+          <input type="date" id = "date" name ="date" value = "21-04-1782">
+          <h5 class="hide">br thats not a br</h5>
+            </div>
+          <p>What color is the Grand Palace?</p>
+
+          <input type="color" name="color" id="color" value="#ff0000">
+
+          <p>How many districts exist within Bangkok?</p>
+          <label for="nrDistricts">between 0 and 50:</label>
+          <input type="range" id = "nrDistricts" name="nrDistricts" min="0" max="50" value = "0" oninput="nr.value = parseInt(nrDistricts.value)">
+          <output name="nr" for="nrDistricts">0</output>
+
+          <p>Which of these monuments are not part of Bangkok?</p>
+          <select name="monument" multiple>
+              <option value="Eiffel Tower">Eiffel Tower</option>
+              <option value="Grand Palace">Grand Palace</option>
+              <option value="Wat Arun">Wat Arun</option>
+              <option value="Tokyo Tower">Tokyo Tower</option>
+          </select>
+          
+
+          <p>If you were to rate your enjoyment of this quizz what would you rate it out of 5?</p>
+          
+          <input type="number" id ="rating" name ="rating" min="0" max="5" placeholder="5" step="1">
+          <h5 class="hide">br thats not a br</h5>
+          <h5 class="hide">br thats not a br</h5>
+          <input type="image" src="images/submit.png" alt="submit" width="100" height="50" value="Send email">
+
+        </fieldset>
+    </form>
+    <h5 class="hide">br thats not a br</h5>
+    <svg width="600" height="600">
+        <g transform="translate(100,100)"> 
+          <a href="local.html"><text x="0" y="0" fill="red" style="font-family:Arial;font-size:24;stroke:red" >Local
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="10s" repeatCount= "indefinite" />
+            <animateMotion path="M 0 0 L 100 100" begin="1s" dur="10s" repeatCount= "indefinite"  />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="50" to="0" begin="1s" dur="10s" repeatCount= "indefinite" /> 
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="10s" repeatCount= "indefinite" /> 
+          </text> </a>
+        </g> 
+
+        <g id = "2" transform = "translate(300,200)">
+            <text id = "text2 " x ="50" y = "25" style="font-family:Arial;font-size:24;stroke:blue"><a href="quizz.html">Quizz</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="0" to="720" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="-20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g id = "3" transform = "translate(200,200)">
+            <text id = "text3 " x ="80" y = "25" style="font-family:Arial;font-size:24;stroke:rgba(241, 8, 222, 0.308)"><a href="multimedia.html">multimedia</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="-20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+        <g id = "3" transform = "translate(250,50)">
+            <text id = "text3 " x ="5" y = "5" style="font-family:Arial;font-size:24;stroke:rgba(8, 241, 66, 0.308)"><a href="info.html">info</a>
+                <animateTransform attributeName="transform" type="rotate" dur="10s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="10s" values="20; 150; -20" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="10s" values="10; 60; 10" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g id = "3" transform = "translate(150,150)">
+            <text id = "text3 " x ="5" y = "5" style="font-family:Arial;font-size:24;stroke:rgba(8, 230, 230, 0.808)"><a href="comentarios.html">comentarios</a>
+                <animateTransform attributeName="transform" type="rotate" dur="1.5s" from="360" to="0" repeatCount="indefinite" /> 
+                <animate attributeName="cx" dur="1.5s" values="0; 0; 0" repeatCount="indefinite" />
+                <animate attributeName="ry" dur="1.5s" values="0; 0; 0" repeatCount="indefinite" />
+            </text>
+        </g>
+
+        <g transform="translate(100,100)"> 
+            <a href="index.html"><text x="0" y="0" fill="yellow" style="font-family:Arial;font-size:24;stroke:rgb(255, 198, 12)" >Introducao
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" repeatCount= "indefinite" />
+              <animateMotion path="M 150 0 L 100 230" begin="1s" dur="5s" repeatCount= "indefinite"  />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="50" to="0" begin="1s" dur="5s" repeatCount= "indefinite" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="2" additive="sum" begin="1s" dur="5s" repeatCount= "indefinite" /> 
+            </text> </a>
+          </g> 
+        Sorry, your browser sucks.
+      </svg>
+    </section>
+    </main>
+     <aside>
+      <img src="images/bangkok_small.jpg">
+      <h3>Interesting fact:</h3>
+      <p>Did you know Bangkok’s ceremonial name is, ‘Krungthepmahanakhon Amonrattanakosin Mahintharayutthaya Mahadilokphop Noppharatratchathaniburirom Udomratchaniwetmahasathan Amonphimanawatansathit Sakkathattiyawitsanukamprasit.</p>
+      <h6>Good luck pronouncing that!</h6>
+  </aside>
+    <footer>
+        <p>Rogério Oliveira a21703237 student at Universidade Lusofona</p>
+    </footer>
+
+    </body>
+
+    </html>
